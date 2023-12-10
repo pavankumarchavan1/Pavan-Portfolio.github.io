@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Awesome Chocolates</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html#two" class="logo"><strong>Back to Projects</strong> <span></span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+					<!--	<li><a href="#one">Introduction</a></li> 
+						<li><a href="#two">Projects</a></li> -->
+						<li><a href="index.html#contact">Contact</a></li>
+				<!-- </ul>
+				 	<ul class="actions stacked">
+						<li><a href="#" class="button primary fit">Get Started</a></li>
+						<li><a href="#" class="button fit">Log In</a></li>
+					</ul> -->
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/chocolates.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Awesome Chocolates</h1>
+							</header>
+							<div class="content">
+								<p>POWER BI</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Overview</h2>
+									</header>
+									<p>
+										This is a Power BI project to Analyse the sales data of an imaginary Company called 
+										Awesome Chocolate, to discover hidden insights within their data for a more informed decision making.
+									</p>
+									<header class="major">
+										<h3>Aim of the Project:</h3>
+									</header>
+									<p>
+										The major aim of thie project is to gain insight into the sales data of Awesome Chocolates
+										to determine the Total shipment counts, Low Box Shipment percentage, sales trends and sales by Geographical area.
+									</p>
+									<header class="major">
+										<h3>Approach Used:</h3>
+									</header>									
+									<ol>
+										<li><strong>Data Import: </strong>MySQL workbench is used to import the SQL data.</li>
+										<ol>
+												<li>
+													Open MySQL Workbench
+												</li>
+												<li>
+													Click on the “server administration” tab
+												</li>
+												<li>
+													Click on “Data Import/Restore”
+												</li>
+												<li>
+													Select the option “Import from self-contained file”
+												</li>
+												<li>
+													Specify the path of the downloaded awesome-chocolates-data.sql file
+												</li>
+												<li>
+													Start import
+												</li>
+										</ol>
+											This data from MySQL Workbench is then connected to Power BI using Get data tab.
+										<ol>
+											<li>
+												Open Power BI
+											</li>
+											<li>
+												Search MySQL Database and click on connect
+											</li>
+											<li>
+												Enter the server and database name of MySQL Database from where you are connecting
+											</li>
+											<li>
+												Load the data to Power BI
+											</li>
+										</ol>
+										<li><strong>Data Cleaning: </strong>Proceeded to Power BI to go through the data once more to be sure that 
+											its ready to be worked with.
+										</li>
+										<li><strong>Measure Creation: </strong>Used DAX to create new columns
+										</li>
+										<ol>
+											<li>
+												Created Measures such as Total Sales, Total Boxes sold, Shipment Count and 
+												Lox Box Shipment(LBS) by using DAX Formulas.
+											</li>
+											<li>
+												Calculated Low Box Shipment percentage by using DIVIDE Function to divide Low Box 
+												Shipment by Shipment Count.
+											</li>
+										</ol>
+										<li><strong>Visualization: </strong>Visualized the Total Sales, Total Boxes, Shipment Count, LBS%, 
+											Sales trend by year, overall Sales by Geographical area and Top 20 Salesperson put together in a dashboard.
+										</li>
+									</ol>
+									<span class="image main">
+										<img src="images/Awesome Chocolates.PNG" alt=" "  width = "350" height="600"/>
+									</span>
+									<ul class="actions">
+										<li><a href="https://github.com/pavankumarchavan1/Awesome-Chocolates" target="_blank" class="button next">View Project</a></li>
+									</ul>
+								</div>
+							</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://github.com/pavankumarchavan1" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/pavan-kumar-chavan-21aa5b79/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Walmart Sales Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html#two" class="logo"><strong>Back to Projects</strong> <span></span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+					<!--	<li><a href="#one">Introduction</a></li> 
+						<li><a href="#two">Projects</a></li> -->
+						<li><a href="index.html#contact">Contact</a></li>
+				<!-- </ul>
+				 	<ul class="actions stacked">
+						<li><a href="#" class="button primary fit">Get Started</a></li>
+						<li><a href="#" class="button fit">Log In</a></li>
+					</ul> -->
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/walmart.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Walmart Sales Analysis</h1>
+							</header>
+							<div class="content">
+								<p>SQL</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Overview</h2>
+									</header>
+									<p>
+										This project aims to explore the Walmart Sales data to understand top performing branches and products, 
+										sales trend of different products, customer behaviour and so on. The aim is to study how sales 
+										strategies can be improved and optimized. The dataset was obtained from Kaggle.
+									</p>
+									<header class="major">
+										<h3>Aim of the Project:</h3>
+									</header>
+									<p>
+										The major aim of thie project is to gain insight into the sales data of Walmart to understand the 
+										different factors that affect sales of the different branches.
+									</p>
+									<header class="major">
+										<h3>Analysis List:</h3>
+									</header>
+									<h4>Product Analysis</h4>
+									<p>
+										Conduct analysis on the data to understand the different product lines, the products 
+										lines performing best and the product lines that need to be improved.
+									</p>
+									<h4>Sales Analysis</h4>
+									<p>
+										This analysis aims to answer the question of the sales trends of product. The result of 
+										this can help use measure the effectiveness of each sales strategy the business applies and what 
+										modificatoins are needed to gain more sales.
+									</p>
+									<h4>Customer Analysis</h4>
+									<p>This analysis aims to uncover the different customers segments, purchase trends and the profitability 
+										of each customer segment.
+									</p>
+									<header class="major">
+										<h3>Approach Used:</h3>
+									</header>									
+									<ol>
+										<li><strong>Data Wrangling: </strong>This is the first step where inspection of data is done to make sure NULL values and missing 
+											values are detected and data replacement methods are used to replace, missing or NULL values.</li>
+											<ul>
+												<li>
+													Build a database
+												</li>
+												<li>
+													Create table and insert the data.
+												</li>
+												<li>
+													Select columns with null values in them. There are no null values in our database as in creating 
+													the tables, we set NOT NULL for each field, hence null values are filtered out.
+												</li>
+											</ul>
+										<li><strong>Feature Engineering: </strong>This will help use generate some new columns from existing ones.</li>
+										<ul>
+											<li>
+												Add a new column named <strong>time_of_day</strong> to give insight of sales in the Morning, Afternoon and Evening. This will help 
+												us answer the question on which part of the day most sales are made.
+											</li>
+											<li>
+												Add a new column named <strong>day_name</strong> that contains the extracted days of the week on which the given transaction took 
+												place (Mon, Tue, Wed, Thur, Fri). This will help answer the question on which week of the day each branch is busiest.
+											</li>
+											<li>
+												Add a new column named <strong>month_name</strong> that contains the extracted months of the year on which the given transaction took 
+												place (Jan, Feb, Mar). This will help us determine which month of the year has the most sales and profit.
+											</li>
+										</ul>
+										<li><strong>Exploratory Data Analysis: </strong>Exploratory data analysis is done to answer the listed questions and aims of this project.</li>
+									  </ol>
+									<ul class="actions">
+										<li><a href="https://github.com/pavankumarchavan1/Walmart-Sales-Analysis" target = "_blank" class="button next">View Project</a></li>
+									</ul>
+								</div>
+							</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://github.com/pavankumarchavan1" target = "_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/pavan-kumar-chavan-21aa5b79/" target = "_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
